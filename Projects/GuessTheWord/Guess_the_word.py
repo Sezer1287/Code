@@ -248,19 +248,21 @@ def play_round(word):
 
     return won
 
-
+RANDOM_MODE = 1
+LEVEL_MODE = 2
+CLIMB_MODE = 3
 # Ana program akışı
 if __name__ == "__main__":
     while True:
         choice = main_menu()
 
-        if choice == 1:
+        if choice == RANDOM_MODE:
             word = get_random_word(DB_PATH)
             won = play_round(word)
             if won is not None:
                 update_word_difficulty(DB_PATH, word, won)
 
-        elif choice == 2:
+        elif choice == LEVEL_MODE:
             while True:
                 level = ask_level()
                 word = get_random_word_by_level(DB_PATH, level)
@@ -273,7 +275,7 @@ if __name__ == "__main__":
             if won is not None:
                 update_word_difficulty(DB_PATH, word, won)
 
-        elif choice == 3:
+        elif choice == CLIMB_MODE:
             Climb_mode(DB_PATH)
 
         else:
