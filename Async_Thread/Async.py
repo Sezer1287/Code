@@ -37,4 +37,5 @@ async def main():
 # Programı çalıştır
 asyncio.run(main())
 
-def init_db()
+def init_db():
+    print("Veritabanı başlatıldı")

@@ -39,3 +39,6 @@ for t in threads:
 # Zaman ölçümü bitir
 end = time.perf_counter()
 print("Toplam süre:", end - start)
+
+def init_db():
+    print("Veritabanı başlatıldı")
