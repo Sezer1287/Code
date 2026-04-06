@@ -1,0 +1,21 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&display=swap');
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+

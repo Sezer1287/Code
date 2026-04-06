@@ -1,6 +1,16 @@
+import sqlite3
+
 from database import connection, cursor
 
 DEBT_PAYMENT_CATEGORY_NAME = "Debt Payment"
+DEFAULT_CATEGORIES = [
+    ("Salary", True),
+    ("Freelance", True),
+    ("Rent", False),
+    ("Grocery", False),
+    ("Utilities", False),
+    ("Transport", False),
+]
 
 
 def add_category(name, user_id, is_income=False):
@@ -31,6 +41,15 @@ def ensure_debt_payment_category(user_id):
     )
     connection.commit()
     return cursor.lastrowid
+
+
+def ensure_default_categories(user_id):
+    for name, is_income in DEFAULT_CATEGORIES:
+        try:
+            add_category(name, user_id, is_income=is_income)
+        except sqlite3.IntegrityError:
+            connection.rollback()
+    ensure_debt_payment_category(user_id)
 
 
 def get_categories_for_user(user_id):

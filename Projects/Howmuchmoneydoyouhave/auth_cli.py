@@ -1,12 +1,9 @@
-import sqlite3
-
 from auth_service import (
     register_user,
     login_user
     ) 
 
-from category_service import add_category
-from category_service import ensure_debt_payment_category
+from category_service import ensure_default_categories
 
 
 def register_flow():
@@ -26,23 +23,7 @@ def register_flow():
         return None
 
 
-    default_categories = [
-        ("Salary", True),
-        ("Freelance", True),
-        ("Rent", False),
-        ("Grocery", False),
-        ("Utilities", False),
-        ("Transport", False),
-    ]
-
-    for name, is_income in default_categories:
-        try:
-            add_category(name, user_id, is_income=is_income)
-        except sqlite3.IntegrityError:
-
-            pass
-
-    ensure_debt_payment_category(user_id)
+    ensure_default_categories(user_id)
 
     print("Registration successful.")
     return user_id

@@ -32,7 +32,7 @@ It lets you manage income, expenses, debts, categories, reports, and goals from 
 ## Requirements
 
 - Python 3.10+
-- Standard library only (no extra packages required)
+- `python-telegram-bot` (for Telegram bot)
 
 ## Run
 
@@ -41,6 +41,15 @@ Go to the project folder and start the app:
 ```bash
 cd Projects/Howmuchmoneydoyouhave
 python main.py
+```
+
+Run Telegram bot:
+
+```bash
+cd Projects/Howmuchmoneydoyouhave
+pip install python-telegram-bot
+$env:TELEGRAM_BOT_TOKEN="your-telegram-token"
+python bot.py
 ```
 
 ## Database
@@ -58,13 +67,23 @@ Main menu after login:
 3. Categories
 4. Reports Center
 5. Goals Center
-0. Logout
+6. Logout
 
 ## Notes
 
 - `Debt Payment` is a system category and is not available for manual category management.
 - When a debt payment is made, remaining debt is updated and an expense transaction is created automatically.
 - In the goals screen, `done %` and `left %` are shown.
+- Telegram bot commands:
+  - `/start <app_user_id>`
+  - `/balance`
+  - `/transactions`
+  - `/debts`
+  - `/add_expense <amount> <category>`
+  - `/add_income <amount> <category>`
+  - `/add_debt <person> <amount>`
+  - `/pay_debt <person> <amount>`
+  - `/report`
 
 ## Learning Path
 

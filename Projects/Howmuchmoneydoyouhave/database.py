@@ -18,6 +18,15 @@ cursor.execute(
     """
 )
 
+cursor.execute("PRAGMA table_info(users)")
+_user_columns = {row[1] for row in cursor.fetchall()}
+if "telegram_id" not in _user_columns:
+    cursor.execute("ALTER TABLE users ADD COLUMN telegram_id INTEGER")
+if "invited_by" not in _user_columns:
+    cursor.execute("ALTER TABLE users ADD COLUMN invited_by INTEGER")
+if "phone" not in _user_columns:
+    cursor.execute("ALTER TABLE users ADD COLUMN phone TEXT")
+
 
 cursor.execute(
     """
@@ -31,12 +40,6 @@ cursor.execute(
     )
     """
 )
-
-# Lightweight migration for existing databases.
-cursor.execute("PRAGMA table_info(categories)")
-category_columns = {row[1] for row in cursor.fetchall()}
-if "is_income" not in category_columns:
-    cursor.execute("ALTER TABLE categories ADD COLUMN is_income INTEGER NOT NULL DEFAULT 0")
 
 
 cursor.execute(
@@ -88,38 +91,6 @@ cursor.execute(
     """
 )
 
-# Lightweight migration for existing goals table.
-cursor.execute("PRAGMA table_info(goals)")
-goal_columns = {row[1] for row in cursor.fetchall()}
-if "is_active" not in goal_columns and goal_columns:
-    cursor.execute("ALTER TABLE goals ADD COLUMN is_active INTEGER NOT NULL DEFAULT 1")
-
-
-# Lightweight migration for existing debt table.
-cursor.execute("PRAGMA table_info(debts)")
-debt_columns = {row[1] for row in cursor.fetchall()}
-if "remaining_amount" not in debt_columns:
-    cursor.execute("ALTER TABLE debts ADD COLUMN remaining_amount REAL NOT NULL DEFAULT 0")
-if "status" not in debt_columns:
-    cursor.execute("ALTER TABLE debts ADD COLUMN status TEXT NOT NULL DEFAULT 'active'")
-if "due_date" not in debt_columns:
-    cursor.execute("ALTER TABLE debts ADD COLUMN due_date TEXT")
-if "last_payment_date" not in debt_columns:
-    cursor.execute("ALTER TABLE debts ADD COLUMN last_payment_date TEXT")
-
-# Backfill existing rows safely.
-cursor.execute("UPDATE debts SET remaining_amount = amount WHERE remaining_amount <= 0")
-cursor.execute(
-    """
-    UPDATE debts
-    SET status = CASE
-        WHEN remaining_amount <= 0 THEN 'paid'
-        ELSE 'active'
-    END
-    WHERE status IS NULL OR status = ''
-    """
-)
-
 # Helpful indexes for faster per-user reads.
 #cursor.execute(
 #    "CREATE INDEX IF NOT EXISTS idx_categories_user_id ON categories(user_id)"
@@ -130,6 +101,7 @@ cursor.execute(
 #cursor.execute(
 #    "CREATE INDEX IF NOT EXISTS idx_debts_user_id ON debts(user_id)"
 #)
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_phone ON users(phone)")
 
 # Save table and index creation.
 connection.commit()
