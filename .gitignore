@@ -3,3 +3,9 @@ __pycache__/
 
 # SQLite
 *.db
+
+# Python virtualenv (created by Cursor Cloud setup)
+.venv/
+
+# Node
+node_modules/
