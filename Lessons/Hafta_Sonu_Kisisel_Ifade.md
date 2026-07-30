@@ -1,13 +1,13 @@
-# This Weekend, Here, I Am Beautiful
+# This Weekend, Let’s Swim Here
 
-This weekend, here, I am beautiful.
+This weekend, let’s swim here.
 
-The words are short, but there is stillness inside them. No rush. Being somewhere is enough — not a list of plans, just here.
+Not a plan with deadlines — an invitation. Water does not ask for commits or clean code. It only asks that you enter.
 
-Morning opens more slowly. The steam from tea, an open window, the sounds outside — none of them need to catch up. Code, project, commit… all of it can pause for a while. I do not have to learn today; today I only remember to breathe.
+Morning can wait on the shore. Shoes off, phone aside, the surface bright and open. No sprint. Just the first step in, then another, until the day feels lighter than it did on land.
 
-The place I call “here” may not be an address. Sometimes a desk, sometimes a walk, sometimes a quiet corner inside myself. What matters is not the name of the place, but feeling whole there.
+“Here” might be the sea, a pool, a quiet stretch of water — or simply the decision to stop rushing and move with something larger than yourself. The place matters less than the plunge.
 
-And “I am beautiful” is not boasting. It is a small affirmation: today I am enough. With my gaps, with unfinished work, with the part of me that will try again tomorrow. The weekend lets me stop carrying all of that and simply keep it beside me for a bit.
+“Let’s swim” is shared. Not alone at a desk, not locked in a lesson. Side by side, or alone and still free — arms cutting through water, breath finding its own rhythm.
 
-When evening comes, I might jot down a line. Or I might write nothing. Both are fine. Because this weekend, here, I am beautiful — and saying even that is expression enough for today.
+When we dry off, maybe there is a short note. Maybe there is only salt on the skin and a quieter mind. Both are enough. Because this weekend, let’s swim here — and that, for today, is expression enough.
