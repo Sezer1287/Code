@@ -1,13 +1,13 @@
-# Hafta Sonu Burada Güzelim
+# This Weekend, Here, I Am Beautiful
 
-Hafta sonu burada güzelim.
+This weekend, here, I am beautiful.
 
-Kelimeler kısa, ama içlerinde durmak var. Acele yok. Bir yerde olmak yeter; plan listesi değil, sadece burası.
+The words are short, but there is stillness inside them. No rush. Being somewhere is enough — not a list of plans, just here.
 
-Sabah daha yavaş açılıyor. Çayın buharı, açık pencere, dışarıdaki sesler — hiçbirinin yetişmesi gerekmiyor. Kod, proje, commit… hepsi durabilir bir süre. Bugün öğrenmek zorunda değilim; bugün yalnızca nefes almayı hatırlıyorum.
+Morning opens more slowly. The steam from tea, an open window, the sounds outside — none of them need to catch up. Code, project, commit… all of it can pause for a while. I do not have to learn today; today I only remember to breathe.
 
-“Burada” dediğim yer bir adres olmayabilir. Bazen bir masa, bazen bir yürüyüş, bazen de kendi içimde sakin kalan bir köşe. Önemli olan yerin adı değil; kendimi orada tamam hissetmem.
+The place I call “here” may not be an address. Sometimes a desk, sometimes a walk, sometimes a quiet corner inside myself. What matters is not the name of the place, but feeling whole there.
 
-“Güzelim” demek de övünmek değil. Küçük bir onay: bugün yeterince iyiyim. Eksiklerimle, yarım kalan işlerimle, yarın yine deneyecek olan yanımla. Hafta sonu, bunları taşımayı bırakıp biraz yanımda tutmama izin veriyor.
+And “I am beautiful” is not boasting. It is a small affirmation: today I am enough. With my gaps, with unfinished work, with the part of me that will try again tomorrow. The weekend lets me stop carrying all of that and simply keep it beside me for a bit.
 
-Akşam olduğunda belki bir satır not düşerim. Belki hiçbir şey yazmam. İkisi de tamam. Çünkü hafta sonu burada güzelim — ve bunu söylemek bile, bugün için yeterli bir ifade.
+When evening comes, I might jot down a line. Or I might write nothing. Both are fine. Because this weekend, here, I am beautiful — and saying even that is expression enough for today.
