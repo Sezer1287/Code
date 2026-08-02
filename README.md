@@ -16,9 +16,17 @@ This repository is my personal learning space while I follow an education pathwa
 - Using **Git/GitHub** properly (commits, .gitignore, pushing clean projects)
 - Building projects that use **persistent storage** (SQLite)
 
-## Featured project: GuessTheWord
+## Featured projects
+
+### GuessTheWord
 
 A “guess the word” game that stores word difficulty in a SQLite database and updates it based on user success/failure over time.
 
 ➡️ Project folder: `Projects/GuessTheWord/`
+
+### Çakır Keyif Cebir
+
+A relaxed algebra practice CLI: linear equations, simplify, evaluate, two-step equations. Scores persist in SQLite.
+
+➡️ Project folder: `Projects/CakirKeyifCebir/`
 
